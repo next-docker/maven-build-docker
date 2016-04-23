@@ -5,3 +5,5 @@ git clone $GIT_REPO
 cd dynamo
 
 mvn clean install
+
+cp -fR target/* /target/.
