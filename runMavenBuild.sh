@@ -6,4 +6,7 @@ cd dynamo
 
 mvn clean install
 
+echo 'Copy Target folder'
+ls -lrt target/*
+
 cp -fR target/* /target/.
