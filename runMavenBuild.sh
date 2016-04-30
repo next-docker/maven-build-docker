@@ -4,9 +4,13 @@ git clone $GIT_REPO
 
 cd dynamo
 
-mvn clean install
+if [ -z "${MVN_COMMAND+xxx}" ];
+then
+mvn clean install 
+else
+mvn $MVN_COMMAND 
+fi
 
 echo 'Copy Target folder'
-ls -lrt target/*
 
-cp -fR target/* /target/.
+cp -fR ./target/* /target/.
