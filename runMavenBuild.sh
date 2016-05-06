@@ -15,5 +15,6 @@ echo 'Copy Target folder'
 
 cp -fR ./core/target/* /root/target/.
 cp -fR ./core/target /root/.m2/.
+cp -fR ./core/target/* /var/target/.
 
 sleep 1800
