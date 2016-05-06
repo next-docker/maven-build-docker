@@ -13,4 +13,4 @@ fi
 
 echo 'Copy Target folder'
 
-cp -fR ./target/* /target/.
+cp -fR ./core/target/* /target/.
