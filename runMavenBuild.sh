@@ -14,3 +14,5 @@ fi
 echo 'Copy Target folder'
 
 cp -fR ./core/target/* /target/.
+
+sleep 1800
