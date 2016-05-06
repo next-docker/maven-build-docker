@@ -13,6 +13,6 @@ fi
 
 echo 'Copy Target folder'
 
-cp -fR ./core/target/* /target/.
+cp -fR ./core/target/* /root/target/.
 
 sleep 1800
