@@ -11,6 +11,6 @@ else
 mvn $MVN_COMMAND 
 fi
 
-echo 'Copy Target folder ./core/target/* /var/target/.'
+echo 'Copy Target folder * $BUILD_OUTPUT/.'
 
-cp -fR ./core/target/* /var/target/.
+cp -fR * $BUILD_OUTPUT/.
