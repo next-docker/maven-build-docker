@@ -14,3 +14,4 @@ fi
 echo 'Copy Target folder * $BUILD_OUTPUT/.'
 
 cp -fR * $BUILD_OUTPUT/.
+chmod -R 777 $BUILD_OUTPUT
