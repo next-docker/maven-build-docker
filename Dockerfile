@@ -1,4 +1,4 @@
-FROM ping2ravi/jdk:oracle_jdk8.92.14_ubuntu.14.04
+FROM ping2ravi/jdk:oracle_jdk8.92.14_ubuntu.15.04
 
 MAINTAINER Ravi Sharma
 
@@ -14,7 +14,7 @@ ENV PATH ${PATH}:${MAVEN_HOME}/bin
 
 #Install GIT
 
-RUN sudo apt-get install -y  git
+RUN apt-get install -y  git
 
 ADD ./runMavenBuild.sh /
 RUN chmod 755 /runMavenBuild.sh
