@@ -6,8 +6,10 @@ cd repo
 
 if [ -z "${MVN_COMMAND+xxx}" ];
 then
+echo 'MAVEN COMMAND TO RUN : CLEAN INSTALL' 
 mvn clean install 
 else
+echo 'MAVEN COMMAND TO RUN : '$MVN_COMMAND 
 mvn $MVN_COMMAND 
 fi
 
