@@ -17,4 +17,5 @@ cp -fR * $BUILD_OUTPUT/.
 
 echo "Changing Permission of Folder $BUILD_OUTPUT/."
 chmod -R 777 $BUILD_OUTPUT
+chmod -R 777 ~/.m2
 echo "permission Updated"
