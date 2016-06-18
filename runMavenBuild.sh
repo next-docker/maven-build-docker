@@ -11,7 +11,10 @@ else
 mvn $MVN_COMMAND 
 fi
 
-echo 'Copy Target folder * $BUILD_OUTPUT/.'
+echo "Copy Target folder to $BUILD_OUTPUT/."
 
 cp -fR * $BUILD_OUTPUT/.
+
+echo "Changing Permission of Folder $BUILD_OUTPUT/."
 chmod -R 777 $BUILD_OUTPUT
+echo "permission Updated"
