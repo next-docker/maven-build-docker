@@ -3,6 +3,15 @@ if [ -z "${GIT_REPO+xxx}" ]; then echo "GIT_REPO varibale is not set while runni
 git clone $GIT_REPO repo
 
 cd repo
+if [ -z "${BRANCH+xxx}" ];
+then
+echo 'Building Master Branch'
+else
+echo 'Switching to Branch : '$BRANCH
+git checkout $BRANCH
+fi
+
+
 
 if [ -z "${MVN_COMMAND+xxx}" ];
 then
